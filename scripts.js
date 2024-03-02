@@ -110,7 +110,7 @@ function generarTablaDieta(dietaDiaria) {
 function generarTablaDietaComidas(dietaDiaria) {
     // Base de datos de platos completos con valores nutricionales
     var platosCompletos = [
-    // Desayunos adicionales
+    // Desayunos veganos
     { nombre: "Tostada de aguacate y tomate", tipo: "Desayuno", proteinas: 5, grasas: 10, carbohidratos: 25 },
     { nombre: "Batido de espinacas, plátano y almendras", tipo: "Desayuno", proteinas: 8, grasas: 7, carbohidratos: 30 },
     { nombre: "Tortitas de avena y plátano", tipo: "Desayuno", proteinas: 6, grasas: 5, carbohidratos: 35 },
@@ -120,9 +120,9 @@ function generarTablaDietaComidas(dietaDiaria) {
     { nombre: "Smoothie de bayas y espinacas", tipo: "Desayuno", proteinas: 6, grasas: 3, carbohidratos: 35 },
     { nombre: "Gachas de quinoa con leche de almendras", tipo: "Desayuno", proteinas: 7, grasas: 6, carbohidratos: 45 },
     { nombre: "Tortilla de champiñones y espinacas", tipo: "Desayuno", proteinas: 8, grasas: 7, carbohidratos: 15 },
-    { nombre: "Pan integral con aguacate y huevo pochado", tipo: "Desayuno", proteinas: 12, grasas: 15, carbohidratos: 20 },
+    { nombre: "Pan integral con aguacate y tomate", tipo: "Desayuno", proteinas: 12, grasas: 15, carbohidratos: 20 },
 
-    // Almuerzos adicionales
+    // Almuerzos veganos
     { nombre: "Hamburguesa de lentejas con ensalada", tipo: "Almuerzo", proteinas: 20, grasas: 10, carbohidratos: 35 },
     { nombre: "Curry de garbanzos con arroz integral", tipo: "Almuerzo", proteinas: 18, grasas: 8, carbohidratos: 50 },
     { nombre: "Ensalada de quinoa, aguacate y tomate", tipo: "Almuerzo", proteinas: 15, grasas: 12, carbohidratos: 40 },
@@ -134,19 +134,18 @@ function generarTablaDietaComidas(dietaDiaria) {
     { nombre: "Sándwich de tofu a la parrilla con verduras", tipo: "Almuerzo", proteinas: 18, grasas: 10, carbohidratos: 35 },
     { nombre: "Bowl de falafel con hummus y ensalada", tipo: "Almuerzo", proteinas: 20, grasas: 15, carbohidratos: 30 },
 
-    // Cenas adicionales
+    // Cenas veganas
     { nombre: "Lasagna de vegetales y tofu", tipo: "Cena", proteinas: 20, grasas: 15, carbohidratos: 35 },
     { nombre: "Ensalada de garbanzos y remolacha", tipo: "Cena", proteinas: 15, grasas: 8, carbohidratos: 30 },
-    { nombre: "Tacos de coliflor con guacamole", tipo: "Cena", proteinas: 12, grasas: 10, carbohidratos: 25 },
-    { nombre: "Curry de verduras y garbanzos", tipo: "Cena", proteinas: 18, grasas: 10, carbohidratos: 40 },
-    { nombre: "Berenjenas rellenas de quinoa y verduras", tipo: "Cena", proteinas: 15, grasas: 10, carbohidratos: 30 },
+    { nombre: "Pasta integral con boloñesa de lentejas", tipo: "Cena", proteinas: 18, grasas: 10, carbohidratos: 40 },
+    { nombre: "Tacos de jackfruit con guacamole", tipo: "Cena", proteinas: 16, grasas: 12, carbohidratos: 30 },
     { nombre: "Risotto de champiñones y espárragos", tipo: "Cena", proteinas: 15, grasas: 12, carbohidratos: 40 },
     { nombre: "Sopa de calabaza y zanahoria", tipo: "Cena", proteinas: 8, grasas: 5, carbohidratos: 20 },
     { nombre: "Pastel de queso vegano", tipo: "Cena", proteinas: 10, grasas: 12, carbohidratos: 30 },
     { nombre: "Brochetas de tofu y vegetales a la parrilla", tipo: "Cena", proteinas: 16, grasas: 10, carbohidratos: 25 },
     { nombre: "Ensalada de lentejas y vegetales asados", tipo: "Cena", proteinas: 15, grasas: 8, carbohidratos: 30 },
 
-    // Snacks adicionales
+    // Snacks veganos
     { nombre: "Hummus con bastones de zanahoria", tipo: "Snack", proteinas: 5, grasas: 6, carbohidratos: 15 },
     { nombre: "Rodajas de manzana con mantequilla de almendras", tipo: "Snack", proteinas: 3, grasas: 8, carbohidratos: 20 },
     { nombre: "Batido de proteínas de guisante", tipo: "Snack", proteinas: 20, grasas: 5, carbohidratos: 10 },
@@ -157,8 +156,9 @@ function generarTablaDietaComidas(dietaDiaria) {
     { nombre: "Pan integral con aguacate y tomate", tipo: "Snack", proteinas: 5, grasas: 10, carbohidratos: 20 },
     { nombre: "Batido verde detox", tipo: "Snack", proteinas: 5, grasas: 3, carbohidratos: 30 },
     { nombre: "Huevos rellenos de tofu y aguacate", tipo: "Snack", proteinas: 10, grasas: 8, carbohidratos: 15 }
-    // Agrega más platos completos vegetarianos según sea necesario
+    // Agrega más platos completos veganos según sea necesario
 ];
+
 
     
     var tablaHTML = "<h2>Selección de Comidas</h2><table><tr><th>Día</th><th>Comida</th><th>Plato Completo</th></tr>";
